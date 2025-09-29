@@ -1,0 +1,26 @@
+/* Make the page background and center the grid */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #f0f0f0;
+}
+
+/* The outer container that holds all squares */
+.container {
+  display: flex;
+  flex-wrap: wrap;        /* allow squares to wrap to next line */
+  width: 480px;           /* total width of grid */
+  height: 480px;          /* total height of grid */
+  border: 2px solid #333;
+}
+
+/* Individual squares */
+.square {
+  width: 30px;            /* 480 ÷ 16 = 30 */
+  height: 30px;
+  box-sizing: border-box; /* include borders in size */
+  border: 1px solid #ddd;
+}
