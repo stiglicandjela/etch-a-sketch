@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-a-Sketch!</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etch-a-Sketch!</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Etch-a-Sketch!</h1>
+
+<div class="app">
+  <div class="controls">
     <button id="new-grid">New Grid</button>
-    <div class="container"></div>
-    <script src="script.js"></script>
+    <button class="mode-btn active" id="normal-mode">Normal</button>
+    <button class="mode-btn" id="random-mode">Random Color</button>
+    <button class="mode-btn" id="shadow-mode">Shadow Darken</button>
+    <button class="mode-btn" id="eraser-mode">Eraser</button>
+  </div>
+
+  <div class="container"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
